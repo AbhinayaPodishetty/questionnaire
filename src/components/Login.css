@@ -1,0 +1,76 @@
+/* body{
+    font-family:'Segoe UI',sans-serif;
+     margin:0;
+    padding:0; 
+}
+ */
+
+.login-wrapper {
+  position: fixed;
+  inset: 0; /* shorthand for top: 0; right: 0; bottom: 0; left: 0 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  z-index: 1000; /* make sure it's above other elements */
+  padding: 20px;
+  background: linear-gradient(180deg, #3b82f6, #1a237e);
+}
+.login-card{
+    background: white;
+    border-radius:12px;
+    box-shadow:0 4px 16px rgba(0,0,0,0.2);
+    padding:30px;
+    width:80%;
+    max-width:400px;
+    
+
+}
+.login-card h2{
+    font-size:1.5rem;
+    text-align:center;
+}
+@media(max-width:576px){
+    .login-card{
+        padding:20px;
+    }
+    .login-card h2{
+        font-size:1.3rem;
+    }
+
+    .form-label{
+        font-size:0.9rem;
+    }
+    .btn{
+        font-size:1rem;
+    }
+}
+@media(min-width:577px) and (max-width:991px){
+    .login-card{
+        max-width:500px;
+        padding:35px;
+    }
+    .login-card h2{
+        font-size:1.7rem;
+    }
+
+    .form-label,
+    .form-control,
+    .btn{
+        font-size:1rem;
+    }
+}
+@media(min-width:992px){
+    .login-card{
+        max-width:600px;
+        padding:40px;
+    }
+    .login-card h2{
+        font-size:2rem;
+    }
+    .form-label,
+    .form-control,
+    .btn{
+        font-size:1.1rem;
+    }
+}

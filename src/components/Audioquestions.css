@@ -1,0 +1,433 @@
+html,
+body {
+  height: 90%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(20, 20, 107);
+  font-family: sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+
+}
+.audioq-sidebar {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.audioq-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width:100vw;
+  background-color: rgb(20, 20, 107);
+  
+}
+
+/* .audioq-container {
+
+  width: 80vw;
+  height: 90vh;
+  padding: 20px;
+  border-radius: 10px;
+
+  background-color: rgb(24, 24, 122);
+
+} */
+
+.audioq-card {
+  background-color: whitesmoke;
+  border-radius: 8px;
+
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.audioq-timer {
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+
+.audioq-title {
+  color: whitesmoke;
+
+}
+
+.audioq-sidebar {
+  color: white;
+}
+
+.audioq-card-body {
+  padding: 20px;
+}
+
+.audioq-audio-control {
+  display: flex;
+  align-items: center;
+}
+
+.audioq-btn {
+  background-color: #007bff;
+  color: white;
+
+}
+
+.audioq-btn,
+.audioq-submit-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.audioq-btn:disabled {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.audioq-range {
+  width: 20%;
+  margin-top: 10px;
+}
+
+.audioq-input {
+  width: 30%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 50px;
+  font-weight: bold;
+
+}
+
+.audioq-alert {
+  background-color: #f8d7da;
+  color: #842029;
+  border: 1px solid #f5c2c7;
+  border-radius: 4px;
+}
+
+.audioq-submit-btn {
+  background-color: #ffc107;
+  color: #000;
+}
+
+
+.audioq-text {
+  display: flex;
+   justify-content: space-between; 
+  padding: 40px;
+
+}
+
+/* .user-name {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+
+} */
+
+@media (max-width: 1024px) {
+  .audioq-container {
+    width: 90vw;
+    height: auto;
+  }
+
+  .audioq-card {
+    width: 70vw;
+    height: auto;
+    margin-top:50px;
+    margin-left:20px;
+  }
+
+  .audioq-input {
+    width: 60%;
+  }
+
+  .audioq-submit-btn {
+    width: 40%;
+    height: auto;
+  }
+
+  .audioq-btn {
+    display: flex;
+    gap: 20px;
+  }
+
+  .audioq-btn,
+  .audioq-submit-btn {
+    font-size: 15px;
+
+    width: 100px;
+  }
+
+  .d-flex {
+    flex-direction: row !important;
+    align-items: center;
+    gap: 100px;
+
+  }
+
+  .audioq-timer {
+    width: 100%;
+  }
+
+  .audioq-text {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .user-name {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 40px;
+  }
+  .audio-title{
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .audioq-container {
+    max-width: 95vw;
+     padding: 12px; 
+  }
+
+  .audioq-card {
+    width: 60vw;
+    height: 35vw;
+    padding: 15px;
+    margin-left:20px;
+  }
+
+
+
+  .audioq-input,
+  .audioq-submit-btn {
+    width: 90%;
+  }
+  .audioq-body{
+    width:40%;
+  }
+  .d-flex{
+   
+    gap:20px;
+  }
+
+  .audioq-range {
+    width: 40%;
+  }
+
+.audioq-submit-btn {
+    width: 20%;
+    height: auto;
+  } 
+
+  .audioq-text {
+    padding: 10px;
+  }
+
+  .audioq-btn {
+    padding: 6px 12px;
+   
+  }
+
+  /* .audioq-audio-control {
+  display: flex;
+  justify-content: space-between;
+  margin-right:20px;
+  margin-top:20px;
+} */
+}
+
+@media (max-width:320px){
+  .audioq-wrapper{
+    flex-direction:column !important;
+    overflow-x: hidden;
+  }
+  .audioq-sidebar{
+    display:none;
+  }
+  .audioq-container {
+    padding: 10px;
+    width:100%;
+   
+  }
+  .audioq-card {
+     height:30vh;
+     width:82vw;
+    padding: 10px;
+    margin:0 auto;
+    font-size:10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .audioq-wrapper {
+    flex-direction: column !important;
+    overflow-x: hidden;
+  }
+
+  /* .audioq-sidebar {
+     width: 100% !important;
+    white-space:nowrap;
+    gap:8px;
+    border-right: none;
+     -webkit-overflow-scrolling: touch;
+    border-bottom: 1px solid black;
+    display:flex;
+    overflow-x:auto; 
+    
+    
+  } */
+
+   .audioq-sidebar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* max 5 per row */
+    gap: 8px;
+    padding: 10px;
+    /* border-bottom: 1px solid black; */
+    width: 100%;
+  }
+  
+   .audioq-sidebar div {
+    /* flex: 1;
+   font-size:12px;
+    text-align: center;
+    height:50px; */
+    /* flex:0 0 auto;
+    min-width:50px;
+    height:40px;
+    width:40px;
+    font-size:10px;
+    text-align:center;
+    line-height:20px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    background: #f0f0f0; */
+    height: 40px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f0f0f0;
+    height:60px;
+    width:70px;
+  }
+
+  .audioq-container {
+    padding: 10px;
+    width:100%;
+   
+  }
+    .audioq-card-body{
+    display:flex;
+    flex-direction: column;
+    gap:2px;
+  }
+
+  .audioq-input,
+  .audioq-submit-btn {
+    width: 100%;
+    font-size: 14px;
+    
+  }
+
+  .audioq-card {
+     height:60vh;
+     width:80vw;
+    padding: 10px;
+    margin:0 auto;
+  }
+  .audioq-card-body{
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+  }
+
+  .audioq-input,
+  .audioq-submit-btn {
+    width: 100%;
+    font-size: 14px;
+    
+  }
+
+  .audioq-range {
+    width: 100%;
+  }
+  .audioq-audio-control{
+    /* display:flex;
+  font-size:10px; */
+  flex-direction: column;
+    align-items: flex-start;
+   
+  }
+
+  .audioq-btn {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .audioq-timer {
+    font-size: 12px;
+   
+  }
+  .d-flex.gap-2{
+    flex-direction:column;
+  }
+
+  .audioq-text {
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+  }
+
+}
+
+@media(min-width:481px) and (max-width:767px){
+  .audioq-container{
+    padding:15px;
+  }
+  .audioq-card{
+    width:70vw;
+    padding:20px;
+    height:40vh;
+  }
+  .audioq-input,.audioq-submit-btn{
+    width:85%;
+    font-size:15px;
+
+  }
+  .audioq-range{
+    width:65%;
+  }
+  .audioq-btn{
+    padding:8px 14px;
+    font-size:15px;
+  }
+  .audioq-timer{
+    font-size:15px;
+  }
+  .audioq-text{
+    flex-direction:column;
+    padding:15px;
+  }
+
+}
+.audioq-sidebar::-webkit-scrollbar {
+  height: 6px;
+}
+.audioq-sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+.audioq-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

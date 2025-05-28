@@ -1,0 +1,29 @@
+.blocked-page-wrapper{
+    height:100vh;
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, #ffe5e5, #ffcccc);
+  font-family: 'Segoe UI', sans-serif;
+
+}
+.blocked-card{
+    text-align:center;
+    background:white;
+    padding:40px 30px;
+    border-radius:12px;
+    box-shadow:10px 25px rgba(0,0,0,0,1);
+    border:2px solid #ff4d4f;
+    max-width:500px;
+    width:90%;
+}
+.blocked-card h1{
+    color:#d32f2f;
+    font-size:2rem;
+    margin-bottom:15px;
+}
+.blocked-card p{
+    color:#333;
+    font-size:1.1rem;
+}

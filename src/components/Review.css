@@ -1,0 +1,71 @@
+.Review-parent{
+    background-color: #2563eb;
+}
+.Review-wrapper {
+  max-width: 800px;
+  
+  padding: 30px;
+  background: linear-gradient(135deg, #f0f8ff, #415d79); /* Soft gradient */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  font-family: "Segoe UI", sans-serif;
+  width:90%;
+  height:60%;
+ position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  
+}
+
+.Review-wrapper h3 {
+  text-align: center;
+  color: #1e3a8a; /* Deep blue */
+  margin-bottom: 20px;
+}
+
+.Review-wrapper ul {
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.Review-container li {
+  background-color: #ffffff;
+  border: 2px solid #3b82f6;
+  color: #1e40af;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.Review-wrapper li:hover {
+  background-color: #3b82f6;
+  color: white;
+  transform: scale(1.05);
+}
+
+.Review-wrapper .btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.Review-wrapper .btn-primary {
+  background-color: #3b82f6;
+  border: none;
+}
+
+.Review-container .btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.Review-wrapper .btn-secondary {
+  background-color: #6c757d;
+  border: none;
+}
+
+.Review-wrapper .btn-secondary:hover {
+  background-color: #5a6268;
+}
